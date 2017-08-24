@@ -1,0 +1,20 @@
+--BOUNDARY
+Content-Type: application/xml
+Content-Disposition: attachment; filename="doc1.xml"
+Content-Length: 87
+
+<?xml version="1.0" encoding="UTF-8"?>
+<root><a>Some data in an XML document</a></root>
+--BOUNDARY
+Content-Type: application/json
+Content-Disposition: attachment; filename="doc2.json"; category=metadata
+Content-Length: 16
+
+{"quality" : 2 }
+--BOUNDARY
+Content-Type: application/json
+Content-Disposition: attachment; filename="doc2.json"
+Content-Length: 15
+
+{"key":"value"}
+--BOUNDARY--
