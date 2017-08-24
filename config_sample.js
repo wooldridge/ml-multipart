@@ -2,7 +2,7 @@ var config = {};
 
 config.path = "/PATH/TO/multipart/"; // include trailing "/"
 
-config.host = "localhost";
+config.host = "HOSTNAME";
 config.host = 8000;
 
 config.database = {
