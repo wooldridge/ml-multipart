@@ -1,6 +1,6 @@
 var config = {};
 
-config.path = "/PATH/TO/multipart/"; // include trailing "/"
+config.path = "/PATH/TO/ml-multipart/"; // include trailing "/"
 
 config.host = "HOSTNAME";
 config.host = 8000;

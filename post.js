@@ -3,7 +3,8 @@ var config = require('./config'),
     fs = require('fs');
 
 function post() {
-  var buffer = fs.readFileSync('simple-body');
+  //var buffer = fs.readFileSync('simple-body');
+  var buffer = fs.readFileSync('test');
   var options = {
     method: 'POST',
     uri: 'http://' + config.host + ':' + config.port +
@@ -17,7 +18,7 @@ function post() {
   };
   rp(options)
     .then(function (result) {
-      console.log(result, null, 2);
+      console.log(result);
     })
     .catch(function (err) {
       console.log(JSON.stringify(err, null, 2));

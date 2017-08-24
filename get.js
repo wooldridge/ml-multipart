@@ -3,7 +3,6 @@ var config = require('./config'),
     fs = require('fs');
 
 function get() {
-  var buffer = fs.readFileSync('simple-body');
   var options = {
     method: 'GET',
     uri: 'http://' + config.host + ':' + config.port +
